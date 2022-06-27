@@ -1,0 +1,50 @@
+/*chọn tất cả các thẻ của html*/
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "roboto", sans-serif;
+}
+/*Căn giữa đoạn văn bản với độ rộng văn bản là 1000px*/
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+/*màu và trạng thái trên thanh tiêu đề*/
+header{
+    width: 1000px;
+    height: 100px;
+    background: #0e3c85;
+}
+nav {
+    /*độ cao của thanh*/
+    height: 35px;
+    /*màu nền*/
+    background: blue;
+}
+nav .menu ul{
+/*Xóa bỏ dáu chấm đầu dòng*/
+    list-style: none;
+}
+nav .menu ul li{
+    /*cho thành hàng ngang */
+    float: left;
+    /*chỉnh độ cao của 1 dòng*/
+    line-height: 35px;
+    padding: 0 25px;
+}
+nav .menu ul li a{
+/*Màu chữ */
+    color: aliceblue;
+    /*Cỡ chữ*/
+    font-size: 14px;
+    /*bỏ gạch chân*/
+    text-decoration: none;
+}
+nav .search {
+    /*căn giữa*/
+    line-height: 35px;
+/*sang phải 1 khoảng*/
+    float: right;
+    /*sang trái 1 khoảng */
+    margin-right: 25px;
+}

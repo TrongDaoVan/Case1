@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sinh viên</title>
+    <link rel="stylesheet" href="noidung.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <a href="#"><img src="img/logo.jpg" alt="" width="150"height="100px"></a>
+    </header>
+    <nav>
+<div class="menu">
+    <ul>
+        <li><a href="#">Trang chủ</a></li>
+        <li><a href="#">Đào tạo</a></li>
+        <li><a href="#">Diễm đàn</a></li>
+        <li><a href="#">Liên hệ</a></li>
+    </ul>
+</div>
+        <div class="search">
+            <input type="text" placeholder="Tìm kiếm">
+            <button>Tìm kiếm</button>
+        </div>
+    </nav>
+    <div id="side">
+        <a href=""><img src="img/codegim.jpg" alt="" width="1000" height="300"></a>
+    </div>
+    <article>
+        <h1> Danh Sách Sinh Viên </h1>
+        <table style=" border: 1px solid black; width: 700px; float: right">
+            <tr>
+                <th>Mã SV</th>
+                <th>Họ và tên</th>
+                <th>Ngày sinh</th>
+                <th>Giới tính</th>
+                <th>Lớp</th>
+                <th>Tùy chọn </th>
+
+            </tr>
+            <tbody id="list-student">
+            </tbody>
+        </table>
+
+        <table border="1" style="width: 500px; height: 300px" ;>
+            <tr id="id1">
+                <th colspan="2" style="color: aliceblue">Thêm Sinh Viên</th>
+            </tr>
+
+            <tr>
+                <th>Mã SV</th>
+                <td><input type="number" id="id"></td>
+
+            </tr>
+            <tr>
+                <th>Họ và tên</th>
+                <td><input type="text" id="fullname"></td>
+            </tr>
+            <tr>
+                <th>Ngày sinh</th>
+                <td><input type="date" id="date"></td>
+            </tr>
+            <tr>
+                <th>Giới tính</th>
+                <td><input type="text" id="gender"></td>
+            </tr>
+            <tr>
+                <th>Lớp</th>
+                <td><input type="text" id="grade"></td>
+            </tr>
+
+            <tr>
+                <th></th>
+                <td>
+                    <button style="background-color: limegreen" id="add" onclick="addStudentObject()">Add</button>
+                    <button style="background-color: gold" id="edit" onclick="updateStudent()">Update</button>
+                </td>
+            </tr>
+        </table>
+    </article>
+
+</div>
+</body>
+</html>
+<link rel="stylesheet" href="quansv_3.css">
+<script src="lyquansv_3.js"></script>
